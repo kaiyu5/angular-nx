@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Card } from '@angular-nx/ui';
 
 @Component({
   selector: 'lib-customers',
-  imports: [CommonModule],
+  imports: [CommonModule, Card],
   template: `
     <h2>Customers</h2>
     @for (customer of customers; track customer.name) {
-    <div class="card">
-      <h3>{{ customer.name }}</h3>
-    </div>
+    <lib-card [title]="customer.name">
+      <div>From {{ customer.city }}</div>
+    </lib-card>
     }
   `,
   styleUrl: './customers.css',

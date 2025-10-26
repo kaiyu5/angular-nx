@@ -1,7 +1,7 @@
 {
-  "name": "products",
+  "name": "ui",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/domains/products/src",
+  "sourceRoot": "libs/shared/ui/src",
   "prefix": "lib",
   "projectType": "library",
   "tags": [],
@@ -10,7 +10,7 @@
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../../coverage/libs/domains/products"
+        "reportsDirectory": "../../../coverage/libs/shared/ui"
       }
     },
     "lint": {

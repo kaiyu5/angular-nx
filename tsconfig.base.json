@@ -15,8 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-nx/products": ["libs/features/products/src/index.ts"],
-      "@angular-nx/customers": ["libs/features/customers/src/index.ts"]
+      "@angular-nx/products": ["libs/domains/products/src/index.ts"],
+      "@angular-nx/customers": ["libs/domains/customers/src/index.ts"],
+      "@angular-nx/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

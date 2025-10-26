@@ -11,12 +11,12 @@ export const appRoutes: Route[] = [
         path: "customers",
         title: "Customers",
         loadComponent: () =>
-            import("libs/domains/customers/src").then((m) => m.Customers),
+            import("@angular-nx/customers").then((m) => m.Customers),
     },
     {
         path: "products",
         title: "Products",
         loadComponent: () =>
-            import("libs/domains/products/src").then((m) => m.Products),
+            import("@angular-nx/products").then((m) => m.Products),
     },
 ];

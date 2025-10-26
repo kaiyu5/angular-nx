@@ -1,15 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { Card } from '@angular-nx/ui';
 @Component({
   selector: 'lib-products',
-  imports: [CommonModule],
+  imports: [CommonModule, Card],
   template: `<h2>Products</h2>
     @for (product of products; track product.name) {
-    <div class="card">
-      <h3>{{ product.name }}</h3>
-      <div>\${{ product.price }}</div>
-    </div>
+        <lib-card [title]="product.name">
+      <div>{{ product.price }}</div>
+    </lib-card>
+
     } `,
   styleUrl: './products.css',
 })
