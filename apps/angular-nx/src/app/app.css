@@ -1,0 +1,15 @@
+.navbar {
+    background: #fafafa;
+    padding: .5rem;
+
+    .nav {
+        padding: 0 .5rem;
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}
+.content {
+    padding: 1rem;
+}
